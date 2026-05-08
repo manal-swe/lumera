@@ -156,7 +156,7 @@ nav a:hover::after{
     overflow-x: hidden;
     padding-top: 80px;
 
-    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),url("../html/floweer.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),url("images/floweer.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
