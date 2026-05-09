@@ -475,11 +475,16 @@ footer{
     }
 }
 
+   .menu-toggle{
+    display: none;
+    font-size: 24px;
+    color: var(--flower-gold);
+    cursor: pointer;
+}
+
+
 /* Mobile Responsive */
-
 @media (max-width: 768px){
-
-    /* Header */
 
     header{
         padding: 18px 0;
@@ -487,46 +492,47 @@ footer{
 
     .header-container{
         display: flex;
-        flex-direction: column !important;
-       justify-content: center !important;
-        align-items: center !important;
-        gap: 18px;
-    }
-
-    .logo{
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
     }
 
     nav{
+        display: none;
+        position: absolute;
+        top: 90px;
+        left: 0;
         width: 100%;
+        background: #211f1f;
+        padding: 25px 0;
+    }
+
+    nav.active{
+        display: block;
     }
 
     nav ul{
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-       align-items: center;
-        gap: 12px 22px;
-        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
-    nav ul li{
-        list-style: none;
-    }
-
-    nav a{
-        font-size: 15px;
+    .menu-toggle{
+        display: block;
     }
 
     .nav-buttons{
-        display: none;
+        display: flex;
+        gap: 10px;
     }
 
-    /* Hero */
+    .btn{
+        padding: 8px 16px;
+        font-size: 14px;
+    }
 
     .hero{
         height: auto;
-        padding: 180px 0 80px;
+        padding: 150px 0 80px;
     }
 
     .hero .container{
@@ -538,19 +544,12 @@ footer{
         width: 100%;
     }
 
-    .hero-subtitle{
-        justify-content: center;
-        margin-bottom: 25px;
-    }
-
     .hero-title{
         font-size: 42px;
-        line-height: 1.2;
     }
 
-    .hero-text{
-        font-size: 15px;
-        margin-bottom: 30px;
+    .hero-subtitle{
+        justify-content: center;
     }
 
     .hero-buttons{
@@ -558,22 +557,9 @@ footer{
         flex-wrap: wrap;
     }
 
-    /* Products */
-
-    .section-title{
-        font-size: 32px;
-    }
-
-    .section-desc{
-        font-size: 16px;
-        padding: 0 10px;
-    }
-
     .product-grid{
         grid-template-columns: 1fr;
     }
-
-    /* Footer */
 
     .footer-content{
         grid-template-columns: 1fr;
@@ -584,10 +570,4 @@ footer{
         left: 50%;
         transform: translateX(-50%);
     }
-
-    .footer-links{
-        padding: 0;
-    }
-
 }
-
