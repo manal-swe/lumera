@@ -537,11 +537,13 @@ footer{
 
     .hero .container{
         flex-direction: column;
-        text-align: center;
+       align-items: flex-start;
     }
+   
 
     .hero-content{
         width: 100%;
+       text-align: left;
     }
 
     .hero-title{
@@ -549,11 +551,11 @@ footer{
     }
 
     .hero-subtitle{
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .hero-buttons{
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: wrap;
     }
 
