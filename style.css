@@ -521,7 +521,7 @@ footer{
     }
 
     .nav-buttons{
-        display: flex;
+        display: none;
         gap: 10px;
     }
 
